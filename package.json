@@ -1,0 +1,19 @@
+{
+  "name": "reactcomponent_ui",
+  "version": "1.0.0",
+  "description": "react component ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielLeefu/ReactComponent_ui.git"
+  },
+  "author": "daniellee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielLeefu/ReactComponent_ui/issues"
+  },
+  "homepage": "https://github.com/DanielLeefu/ReactComponent_ui#readme"
+}
