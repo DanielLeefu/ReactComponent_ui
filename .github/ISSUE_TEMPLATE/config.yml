@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 自定义外部站点链接
+    url: https://github.community/
+    about: Please ask and answer questions here.
+  - name: 掘金地址
+    url: https://bounty.github.com/
+    about: 更多文章可以访问掘金地址.

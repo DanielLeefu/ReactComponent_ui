@@ -20,7 +20,7 @@ gitActions 文档: https://docs.github.com/cn/actions/learn-github-actions/under
 https://juejin.cn/post/6931269326339702791
 
 ### 配置issuse 项目模版
-1. 可以通过github网站项目的setting中设置,这样就会默认在.github.workflows中生成一个ISSUE_TEMPLATE文件夹，里面生成bug_report.yml
+1. 可以通过github网站项目的setting中设置,这样就会默认在.github.workflows中生成一个ISSUE_TEMPLATE文件夹，里面生成bug_report.yml,也可以自己设置文件夹内容。例如 feature_request.yml
 // 文档：https://docs.github.com/cn/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
 2. 如果您愿意在 GitHub 之外接收某些报告，您可以使用 contact_links 将用户引导到外部站点。在ISSUE_TEMPLATE文件夹 内新建一个config.yml文件
 // 文档 https://docs.github.com/cn/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser
