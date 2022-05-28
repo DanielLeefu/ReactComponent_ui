@@ -1,0 +1,32 @@
+{
+  "name": "reactcomponent_ui",
+  "private": true,
+  "version": "0.0.0",
+  "description": "react component ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielLeefu/ReactComponent_ui.git"
+  },
+  "author": "daniellee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielLeefu/ReactComponent_ui/issues"
+  },
+  "homepage": "https://github.com/DanielLeefu/ReactComponent_ui#readme",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview --port 8080"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5"
+  }
+}
