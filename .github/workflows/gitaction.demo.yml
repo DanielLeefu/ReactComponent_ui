@@ -1,5 +1,5 @@
 name: Test Actions Demo
-on: [push]
+on: [commit]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
