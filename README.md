@@ -36,5 +36,12 @@ contact_links:
 ```
 
 
-2. 也可以
-2. 也可以
+
+ ## git Actions 
+ >git Actions 如果想要对git仓库做一些操作，可能会没有权限，所以需要在git 上面搞一个token,在git 个人主页里面
+ >setting 点击，然后点击Developer setting, 然后点击Personal access tokens , 然后 Generate new token, 之后这个token 就可以被github actions 使用ß 通过token,从仓库中拿到原始代码，安装依赖，打包构建，然后放到服务器中（需要知道服务器账号密码地址端口号等）
+
+ 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L
+
+ 然后进入到ReactComponent_ui 这个代码库里面，。给当前代码库设置一些环境变量，点击settings,然后点击Secrets，点击New repository secret,
+ 然后将之前获取到的token 设置成变量。然后继续添加其他的变量，。如服务器地址，服务器用户名，服务器密码，gitactions 连接登陆服务器的端口号一般为22，

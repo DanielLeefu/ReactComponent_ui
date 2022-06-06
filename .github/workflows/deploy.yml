@@ -1,0 +1,46 @@
+name: Deploy demo
+on: [push]
+jobs:
+  Build-Deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    # 下载源码
+      - run: 下载源码
+      - name: Checkout
+        uses: actions/checkout@main
+
+      # 打包构建
+      - name: Build
+        uses: actions/setup-node@master
+      - run: npm install
+      - run: npm run build
+      - run: tar -zcvf release.tgz dist
+
+      # 发布Release
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@master
+        env: 
+           GITHUB_TOKEN: ${{ secrets.GIT_ACTIONS_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+
+
+      # 上传构建结果到 Release
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GIT_ACTIONS_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./release.tgz
+          asset_name: release.tgz
+          asset_content_type: application/x-tgz
+          
+      - run: 打包上传release.tgz 完成
+      - run: This job's status is ${{ job.status }}."
