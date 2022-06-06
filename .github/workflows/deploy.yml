@@ -8,12 +8,11 @@ jobs:
     # 下载源码
       - run: 下载源码
       - name: Checkout
-        uses: actions/checkout@master
-      - run: 开始准备打包 ${{ github.event_name }} 构建"
+        uses: actions/checkout@main
 
       # 打包构建
       - name: Build
-        uses: actions/checkout@master
+        uses: actions/setup-node@master
       - run: npm install
       - run: npm run build
       - run: tar -zcvf release.tgz dist
