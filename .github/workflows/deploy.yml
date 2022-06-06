@@ -41,5 +41,5 @@ jobs:
           asset_name: release.tgz
           asset_content_type: application/x-tgz
           
-      - run: 打包上传release.tgz 完成
+      - run: release.tgz success
       - run: This job's status is ${{ job.status }}."
