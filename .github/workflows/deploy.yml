@@ -6,9 +6,8 @@ jobs:
     steps:
 
     # 下载源码
-      - run: 下载源码
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@master
 
       # 打包构建
       - name: Build
